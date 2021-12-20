@@ -1,0 +1,38 @@
+<!Doctype html>
+<html lang ="en">
+<head>
+<title>jQuery</title>
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script><!--source code for jQuery tag -->
+
+</head>
+<body>
+    <script>
+        $(document).ready(function () { /*Request the dom to see if page is ready*/
+            $("html").append( /*appnding the html file and creating a heading 3 paragraph within 2 divs and a body and assigning paragraphs and divs id  */
+
+
+
+
+                "<body>\
+                    <div id='Container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                                <p id='1'>Paragraph 1</p>\
+                                <p id='2'>Paragraph 2</p>\
+                                <p id='3'>Paragraph 3</p>\
+                        </div>\
+                    </div>\
+                 </body>"
+            );
+            $("#3").css({"font-size":"20px","font-weight":"bold","text-decoration":" underline"})//changing  font parameters for paragraph 3
+            $("body").css({"background-color":"#7FFFD4"})//change body color
+            $("#1").css({"font-size":"25px"});//changing font size for paragraph 1
+            $("#2").css({"color":"red", "font-family":"Helvetica, sans-serif"});// creating a function to change paragraph 2 color 
+            $( "#3" ).click(function() {//creating function to add click on paragraph 3 
+                $('h1').hide();//hides h1 when paragraph3 is clicked
+        });
+        });
+        </script>
+</body>
+</html>
